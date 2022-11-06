@@ -12,6 +12,57 @@
 
 <header class="header">
 
+    <section class="pop-up">
+
+        <div class="pop-up-wrapper">
+
+            <button class="pop-up-close-btn" type="button" name="Закрыть поп-ап">
+                <span class="visually-hidden">Кнопка Закрыть</span>
+            </button>
+
+            <form class="pop-up-form">
+
+                <h2 class="title">Ваш фидбек</h2>
+
+                <div class="question">
+
+                <label for="visits-frequency" >Как часто вы заходите на сайт?</label>
+
+                <select class="pop-up-input" name="visits-frequency" id="visits-frequency">
+                    <option value="everyday">Почти каждый день</option>
+                </select>
+
+                </div>
+
+                <div class="question">
+                <fieldset>
+                    <legend>Вы подписаны на e-mail рассылку?</legend>
+                    <input type="radio" id="Yes" name="Answer" value="" checked>
+                    <label for="Yes">Да</label>
+
+                    <input type="radio" id="No" name="Answer" value="">
+                    <label for="No">Нет</label>
+
+                </fieldset>
+                </div>
+
+                <div class="question">
+                <label for="" class="label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
+
+                <textarea class="textarea pop-up-input" placeholder="Может, больше рецептов?"></textarea>
+                </div>
+
+                <button class="subscribe-btn pop-up-subscribe" type="submit" name="Отправить форму">
+                Отправить
+                <span class="visually-hidden">Кнопка Отправить</span>
+                </button>
+
+            </form>
+
+        </div>
+    
+    </section>
+
     <div class="container">
 
         <div class="wrapper header-wrapper">
@@ -670,6 +721,7 @@
     </div>
 
 </footer>
+
 
 </body>
 </html>
