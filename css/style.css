@@ -945,8 +945,8 @@ a {
 }
 
 .post-picture {
-    max-height: 18.5em;
     max-width: 50%;
+    max-height: 18.5em;
     margin-right: 30px;
 }
 
@@ -959,7 +959,7 @@ a {
 }
 
 .post-preview {
-    max-width: 50%;
+    max-width: calc(50% - 30px);
 }
 
 @media (max-width: 1199px) {
