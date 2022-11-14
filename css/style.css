@@ -816,9 +816,9 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    box-sizing: border-box;
     width: calc(25% - 3px);
     min-height: 320px;
-    box-sizing: border-box;
     padding: 16px 23px;
 
     background-repeat: no-repeat;
@@ -836,9 +836,24 @@ a {
     background: rgba(0, 0, 0, 0.6);
 }
 
-@media (min-width: 500px) and (max-width: 1199px) {
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: landscape) {
     .trend {
-        width: calc(50% - 1.5px);
+        min-height: 245px;
+        padding: 15px 22px;
+    }
+}
+@media (min-width: 641px) and (max-width: 899px) and (orientation: landscape) {
+    .trend {
+        min-height: 245px;
+        padding: 15px 1em;
+    }
+}
+
+@media (max-width: 640px) and (orientation: landscape),
+       (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
+
+    .trend {
+        width: calc(50% - 2px);
         min-height: 245px;
         padding: 15px 20px;
         margin-bottom: 3px;
@@ -847,7 +862,8 @@ a {
         margin-bottom: 0;
     }
 }
-@media (max-width: 499px) {
+
+@media (max-width: 640px) and (orientation: portrait) {
     .trend {
         width: 100%;
         min-height: 230px;
@@ -878,13 +894,35 @@ a {
     z-index: 2;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: landscape) {
     .trend-inner {
-        padding: 35px 30px 0;
+        padding: 24px 15px 0;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 641px) and (max-width: 899px) and (orientation: landscape) {
+    .trend-inner {
+        padding: 24px 0 0;
+        border-top: 3px solid #b59f5b; /* Новый дизайн карточки */
+        border-bottom: 3px solid #b59f5b;
+        border-left: none;
+        border-right: none;
+    }
+}
+
+    @media (max-width: 640px) and (orientation: landscape) {
+    .trend-inner {
+        padding: 25px 20px 0;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
+    .trend-inner {
+        padding: 25px 20px 0;
+    }
+}
+
+@media (max-width: 640px) and (orientation: portrait) {
     .trend-inner {
         padding: 33px 22px 0;
     }
